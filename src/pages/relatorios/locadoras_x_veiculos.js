@@ -10,7 +10,7 @@ function HomePage() {
   const [ locadora, setLocadora ] = React.useState('');
   const [ modelo_id, setModelo_id ] = React.useState('');
   const [ modelos, setModelos ] = React.useState([]);
-  const [ rangePicker, setRangePicker ] = React.useState([new Date(), new Date()]);
+  const [ rangePicker, setRangePicker ] = React.useState(null);
 
   const config = {
       headers: { Authorization: `Bearer ${process.env.REACT_APP_API_KEY}` }
